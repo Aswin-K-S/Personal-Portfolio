@@ -1,0 +1,131 @@
+#home{
+    min-height: 98vh;
+}
+.rectangle1{
+
+    height:6.945205479452056vh;
+    width:3.983333333333336vw;
+    background-color:orange;
+    border-radius:0px 27.397260273972602vh  27.397260273972602vh 0px;
+    position: relative;
+    left: -50px;
+    margin-bottom: 10px;
+    top: 175px;
+    transition: .2s linear;
+}
+.rectangle1:hover{
+    width: 5.9vw;
+}
+.brandlogo{
+    position: relative;
+    left:0px;
+    transition: .2s linear;
+}
+.rectangle1:hover .brandlogo{
+    position: relative;
+    left:1.953125vw
+}
+.herohead{
+  position: relative;
+  left: 5.208333333333333vw;  
+}
+
+.rectangle{
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+    .rectangle1 {
+      display: none;
+    }
+
+  .rectangle{
+    display: none;
+  }
+  .herohead{
+    top: 110px;
+    left:8.208333333333333vw ;
+  }
+  .hmbtn{
+    width: 100px;
+
+  }
+  .tag-list1 li{
+    font-size: 100px;
+    margin-top: 20px;
+
+  }
+  #home{
+    min-height: auto;
+  }
+}
+
+
+
+.tag-list1{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;   
+}
+
+.tag-list1 li{
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 150px;
+    opacity: .2;
+    font-family: 'silkscreen', sans-serif;
+    
+}
+
+.scrolle1r{
+    max-width: 1200px;
+    outline: 3px solid greenyellow;
+
+}
+
+.scroller__inner1{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.scroller1[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller1[data-animated="true"] .scroller__inner1 {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller1[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller1[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller1[data-speed="fast"] {
+    --_animation-duration: 60s;
+  }
+  
+  .scroller1[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }

@@ -1,38 +1,119 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* Set minimum height of the entire page to 100% of the viewport height */
+
 }
 
-.App-link {
-  color: #61dafb;
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+section {
+  flex: 1; /* Allow the section to take up remaining vertical space */
+  
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  flex-shrink: 0; /* Do not allow the footer to shrink */
+}
+
+#light{
+    background-color: #b5c6cc;
+}
+
+#dark{
+    background-color: #171717;
+}
+
+#light .Mheader{
+    background-color: #98a5aa;
+}
+
+#dark .Mheader{
+    background-color: #212327;
+   
+}
+#light .Mfooter{
+    background-color: #98a5aa;
+}
+
+#dark .Mfooter{
+    background-color: #212327;
+   
+}
+
+#dark .navbarlink{
+    color: #f59115;
+}
+#light .navbarlink{
+    color: #302f2d;
+}
+
+#dark .navbarlink:hover{
+    color: #f7f6f5;
+}
+#light .navbarlink:hover{
+    color: #f59115;
+}
+
+#dark .Mcopyright{
+    color: white;
+}
+#light .Mcopyright{
+    color: black;
+}
+
+#dark .Mcopyrightlink{
+    color: #f59115;
+}
+#light .Mcopyrightlink{
+    color: #312d29;
+}
+
+#dark .bttn{
+    color: #f59115;
+}
+#light .bttn{
+    color: #3a352f;
+}
+
+#light h1{
+    color: #171717;
+}
+
+#light .servicecard{
+    background-color: #98a5aa;
+}
+
+#light .projectcard{
+    background-color: #98a5aa;
+}
+
+#dark .bttm{
+    background-color: #0c0c0c;
+}
+#light .bttm{
+    background-color:#98a5aa ;
+}
+
+#light .bttm h4{
+    color: #0c0c0c;
+}
+#dark .bttm h4{
+    color: orange;
+}
+
+#light .view{
+    color: #0c0c0c;
+}
+
+#light .hmbtn{
+    color: #0c0c0c;
+}
+#light .tag-list li{
+    background-color: #98a5aa;
 }
