@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 const variants = {
   initial: {
-    y: 500,
+    y: 300,
     opacity: 0,
   },
   animate: {
@@ -70,7 +70,7 @@ function Contact() {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+91 8593983858</span>
+          <span>+971 543895149</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">

@@ -13,7 +13,7 @@ const servicevariants={
     opacity:0,
   },
   animate:{
-    x:0,
+   x:0,
     opacity:1,
     transition:{
       duration:1,
@@ -49,7 +49,7 @@ function Services() {
     });
   }
   return (
-    <div id="services" style={{ minHeight: "100vh" }}>
+    <div id="services" style={{ minHeight: "100vh" ,overflow:'hidden'}}>
       <div>
         <h1 className="text-center mb-5">
           <span style={{ color: "orange" }}>Service</span> Showcase

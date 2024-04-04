@@ -9,6 +9,8 @@ import p5 from "../Assets/5.png";
 import p6 from "../Assets/6.png";
 import p7 from "../Assets/7.png";
 import p8 from "../Assets/8.png";
+import p10 from "../Assets/10.png";
+import p11 from "../Assets/11.png";
 import { MDBCollapse, MDBBtn } from "mdb-react-ui-kit";
 import { delay, motion, useInView } from "framer-motion";
 
@@ -68,11 +70,11 @@ function Projects() {
                 }}
               >
                 
-                  <img src={p1}  alt="" />
+                  <img src={p10}  alt="" />
                 
                 <div className="project-buttons">
-                  <a href="https://aswin-k-s.github.io/Bank/" className="live btn btn-secondary w-25">Live</a>
-                  <a href="https://github.com/Aswin-K-S/Bank.git" className="github btn btn-secondary w-25">GitHub</a>
+                  <a href="https://hms-user-aswin.netlify.app" className="live btn btn-secondary w-25">Live</a>
+                  <a href="https://github.com/Aswin-K-S/HMS-USER-FRONTEND" className="github btn btn-secondary w-25">GitHub</a>
                 </div>
               </div>
          
@@ -87,11 +89,11 @@ function Projects() {
                 }}
               >
                 
-                  <img src={p3}  alt="" />
+                  <img src={p11}  alt="" />
                
                 <div className="project-buttons">
-                  <a href="https://aswin-k-s.github.io/Food-Gallery/" className="live btn btn-secondary w-25">Live</a>
-                  <a href="https://github.com/Aswin-K-S/Food-Gallery.git" className="github btn btn-secondary w-25">GitHub</a>
+                  <a href="https://hms-admin-aswin.netlify.app" className="live btn btn-secondary w-25">Live</a>
+                  <a href="https://github.com/Aswin-K-S/HMS-ADMIN-FRONTEND" className="github btn btn-secondary w-25">GitHub</a>
                 </div>
               </div>
          
@@ -140,8 +142,8 @@ function Projects() {
                 
                   <img src={p5}  alt="" />
                   <div className="project-buttons">
-                  <a href="https://aswin-k-s.github.io/Travel-Blog/" className="live btn btn-secondary w-25">Live</a>
-                  <a href="https://github.com/Aswin-K-S/Travel-Blog.git" className="github btn btn-secondary w-25">GitHub</a>
+                  <a href="https://aswin-k-s.github.io/Steve-Jobs/" className="live btn btn-secondary w-25">Live</a>
+                  <a href="https://github.com/Aswin-K-S/Steve-Jobs" className="github btn btn-secondary w-25">GitHub</a>
                 </div>
               </div>
             </div>
@@ -212,10 +214,10 @@ function Projects() {
                   }}
                 >
                  
-                    <img src={p8}  alt="" />
+                    <img src={p1}  alt="" />
                     <div className="project-buttons">
-                  <a href="https://aswin-cart.netlify.app/" className="live btn btn-secondary w-25">Live</a>
-                  <a className="github btn btn-secondary w-25">GitHub</a>
+                  <a href="https://aswin-k-s.github.io/Bank/" className="live btn btn-secondary w-25">Live</a>
+                  <a href="https://github.com/Aswin-K-S/Bank" className="github btn btn-secondary w-25">GitHub</a>
                 </div>
                 </div>
           

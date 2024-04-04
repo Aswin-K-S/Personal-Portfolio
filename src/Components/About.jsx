@@ -56,20 +56,20 @@ function About() {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-100px" });
   return (
-    <div id="about" >
-      <motion.div 
-      ref={ref}
-      variants={aboutheadvariant}
-      initial="initial"
-      whileInView="animate"
-      transition={{duration:.2}}
-      viewport={{
-      once:true
-  }}
-      style={{ minHeight: "100vh" }}>
+    <div id="about" style={{overflow:'hidden'}}>
+      <div style={{ minHeight: "100vh" }}>
 
         <h1 className="text-center  mt-5 pt-5"><span style={{color:'orange'}}>About</span> Me</h1>
-        <div className="container">
+        <motion.div 
+         ref={ref}
+         variants={aboutheadvariant}
+         initial="initial"
+         whileInView="animate"
+         transition={{duration:.7}}
+         viewport={{
+         once:true
+     }}
+        className="container">
         <Row>
           
           <Col>
@@ -107,8 +107,8 @@ function About() {
           </Col>
         
         </Row>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 }
